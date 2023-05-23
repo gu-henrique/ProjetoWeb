@@ -67,3 +67,13 @@ O projeto será desenvolvido em etapas, seguindo um cronograma pré-definido. Ab
 ## Considerações Finais
 
 Este documento fornece uma visão geral do projeto em grupo da faculdade para a criação do site da Katire. Ao seguir os requisitos e o cronograma estabelecidos, espera-se que o grupo possa desenvolver uma plataforma funcional e atraente, que atenda às expectativas dos usuários. A colaboração e a comunicação eficaz entre os membros do grupo são fundamentais para o sucesso do projeto.
+
+
+Links:
+
+github⤵️
+https://github.com/gu-henrique/ProjetoWeb/tree/main
+
+figma⤵️
+https://www.figma.com/file/atSC22EUhYnUxWkY8ooM9Z/Untitled?type=design&node-id=0%3A1&t=hjNwgnsaB9n5CrNA-1
+
