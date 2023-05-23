@@ -71,12 +71,12 @@ Este documento fornece uma visão geral do projeto em grupo da faculdade para a 
 
 Links:
 
-documentação
+documentação<br>
 https://drive.google.com/drive/folders/1rLFRr2H3EU3qK_yet7G5yroTnO6HP6YQ?usp=share_link
 
-github⤵️
+github⤵️<br>
 https://github.com/gu-henrique/ProjetoWeb/tree/main
 
-figma⤵️
+figma⤵️<br>
 https://www.figma.com/file/atSC22EUhYnUxWkY8ooM9Z/Untitled?type=design&node-id=0%3A1&t=hjNwgnsaB9n5CrNA-1
 
