@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <title>Tabela</title>
+    <link rel="stylesheet" href="table.css">
 </head>
-
 <body>
-    
-    <div class="hero">
+    <section class="navegacao">
+      <div class="hero">
         <nav>
             <img class="logo" src="/images/katire/katire-black.png" alt="">
             <ul>
@@ -20,71 +19,45 @@
                 <li><a href="/pages/form.html">Login</a></li>
             </ul>
         </nav>
-    </div>
+      </div>
+    </section>
     
-    <h2>Ofertas Disponíveis para sua região</h2>
-    
-    <table>
-        <thead>
-        <tr>
-            <th>Categoria</th>
-            <th>Detalhes</th>
-            <th>Troca por</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Bicicleta</td>
-            <td>Monark Aro 21 com Freio a Disco</td>
-            <td>Notebook</td>
-        </tr>
-        <tr>
-            <td>Tênis</td>
-            <td>Vans Old School Preto</td>
-            <td>Mochila Nike</td>
-        </tr>
-        <tr>
-            <td>Eletrodomésticos</td>
-            <td>Batedeira de Bolo Mondial</td>
-            <td>Sofá cama</td>
-        </tr>
-        <tr>
-            <td>Eletrônicos</td>
-            <td>Smartphone</td>
-            <td>Smartphone Apple iPhone 12 Pro Max</td>
-        </tr>
-        <tr>
-            <td>Roupas</td>
-            <td>Camiseta</td>
-            <td>Camiseta Nike Dri-Fit</td>
-        </tr>
-        <tr>
-            <td>Esportes</td>
-            <td>Tênis</td>
-            <td>Tênis Adidas Ultraboost</td>
-        </tr>
-        <tr>
-            <td>Acessórios</td>
-            <td>Relógio</td>
-            <td>Relógio Casio G-Shock</td>
-        </tr>
-        <tr>
-            <td>Beleza</td>
-            <td>Perfume</td>
-            <td>Perfume Chanel Nº 5</td>
-        </tr>
-        <tr>
-            <td>Decoração</td>
-            <td>Abajur</td>
-            <td>Abajur de Mesa Moderno</td>
-        </tr>
-        <tr>
-            <td>Brinquedos</td>
-            <td>Quebra-Cabeça</td>
-            <td>Quebra-Cabeça 1000 Peças</td>
-        </tr>
-        </tbody>
-    </table>
+    <section class="tabela"> 
+      <div class="container">                    <!-- Um container onde cada div vai receber um valor x/y para linha e coluna -->   
+        <h2> Suas últimas trocas</h2>
+        <ul class="responsive-table">                    <!-- Cria uma lista desordenada, pode receber qualquer formato -->
+      <li class="table-header">                                 <!-- Uma lista com os valores de header da tabela -->
+            <div class="col col-1">COD</div>                           <!-- Cada col recebe uma div e class -->    
+            <div class="col col-2">Categoria</div>
+            <div class="col col-3">Produto</div>
+            <div class="col col-4">Status</div>
+          </li>
+          <li class="table-row">                                             <!-- As colunas são listas organizadas pela class tr -->
+            <div class="col col-1" data-label="COD">42235</div>
+            <div class="col col-2" data-label="CATEGORIA">Bicicletas</div>
+            <div class="col col-3" data-label="PRODUTO">Monark Aro 21 com Freio a Disco</div>
+            <div class="col col-4" data-label="STATUS" style="color: rgb(255, 217, 1)">Negociando</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="COD">42442</div>
+            <div class="col col-2" data-label="CATEGORIA">Tênis</div>
+            <div class="col col-3" data-label="PRODUTO">Vans Old School</div>
+            <div class="col col-4" data-label="STATUS" style="color:rgb(5, 114, 5)">Concluído</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="COD">42257</div>
+            <div class="col col-2" data-label="CATEGORIA">Eletrodomésticos</div>  
+            <div class="col col-3" data-label="PRODUTO">Batedeira de Bolo</div>
+            <div class="col col-4" data-label="STATUS" style="color:rgb(5, 114, 5)">Concluído</div>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="COD">42311</div>
+            <div class="col col-2" data-label="CATEGORIA">Eletrônicos</div>
+            <div class="col col-3" data-label="PRODUTO">Iphone 8 Plus</div>
+            <div class="col col-4" data-label="STATUS" style="color: rgb(187, 3, 3);">Negado</div>
+          </li>
+        </ul>
+      </div>
+    </section>
 </body>
-    
 </html>
