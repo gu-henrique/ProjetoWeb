@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+  }
+
+  h2, h3, h4, h5{
+    color: #000000;
+  }
+
+  .apresentacao img{
+    max-width:1000px;
+    max-height:600px;
+    width: auto;
+    height: auto;
+  }
+
+
+  body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: rgb(241,86,39);
+    background: linear-gradient(156deg, rgba(241,86,39,1) 7%, rgba(13,2,134,1) 49%);
+  }
+  
+.apresentacao{
+  text-align: center;
+  background-color:rgba(255,255,255, 0.6);
+  font-size: 35px;
+  font-family: 'Arial Narrow', sans-serif;
+  border-radius: 25px;
+  border: 4px solid;
+  padding: 20px;
+  height: 100px;
+  width: 200px;
+  margin: auto;
+}
+.slogan{
+  background-color:rgba(255,255,255, 0.6);
+  font-size: 42px;
+  font-family: 'Arial Narrow', sans-serif;
+  border-radius: 25px;
+  border: 4px solid;
+  width: 70%;
+  height: 5%;
+  float:left;
+  padding-left: 5%;
+}
+
+
+p{
+  margin: 25px 50px;
+  color:#000000 ;
+  font-size: 18px;
+  font-family: 'Arial Narrow', sans-serif;
+}
+.descricaoR{
+  background-color:rgba(255,255,255, 0.6);
+  border-radius: 25px;
+  border: 4px solid;
+  width: 60%;
+  height: 8%;
+  float:right;
+  padding-right: 5%;
+}
+
+.descricaoL{
+  background-color:rgba(255,255,255, 0.6);
+  border-radius: 25px;
+  border: 4px solid;
+  width: 60%;
+  height: 8%;
+  float:left;
+  padding-left: 5%;
+}
+
+.descricaoR2{
+  background-color:rgba(255,255,255, 0.6);
+  border-radius: 25px;
+  border: 4px solid;
+  width: 55%;
+  height: 8%;
+  float:right;
+  padding-right: 5%;
+}
+
+.descricaoL2{
+  background-color:rgba(255,255,255, 0.6);
+  border-radius: 25px;
+  border: 4px solid;
+  width: 60%;
+  height: 8%;
+  float:right;
+  padding-right: 5%;
+}
+.membros{
+  background-color:rgba(255,255,255, 0.6);
+color:#000000 ;
+font-size: 18px;
+font-family: 'Arial Narrow', sans-serif;
+border-radius: 25px;
+border: 4px solid;
+padding: 50px;
+width: 100%;
+height: 10%;
+margin: auto;
+float:left;
+text-align: center;
+}
+
+.fim{
+color:#000000 ;
+background-color:rgba(255,255,255, 0.6);
+font-size: 26px;
+font-family: 'Arial Narrow', sans-serif;
+border-radius: 25px;
+border: 4px solid;
+padding: 40px;
+height: 8%;
+margin: auto;
+width: 100%;
+float:left;
+text-align: center;
+}
+
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color:rgba(255,255,255, 0);
+    padding: px;
+    text-align: center;
+    font-size: 30px;
+    border: 4px;
+    border-radius: 25px;
+    margin: auto;
+    width: 90%;
+  }
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+     grid-column-gap: 30px;
+  } 
+
+  .card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 190px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border: 2px solid;
+   }
+   
+   .card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .card-info {
+    background:#181818;
+    color:#181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   .card:hover::after {
+    opacity: 0;
+   }
+   
+   .card:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+   }
+   
+   
+   .card img {
+     border-radius: 5px 5px 0 0;
+     max-width:250px;
+     max-height:120px;
+     width: auto;
+     height: auto;
+   }
+   
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
