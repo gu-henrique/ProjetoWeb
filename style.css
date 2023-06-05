@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f0;
+}
+
+body ::selection {
+    background-color: #ff6f55;
+    color: #f2f2f0;
+}
+
+
+.hero {
+    height: 9vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #f2f2f0;
+}
+
+@media (max-width: 420px) {
+    .hero {
+        height: 6%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: #f2f2f0;
+    }
+}
+
+/* Alinhamento da nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.95rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (max-width: 420px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.logo {
+    width: 6rem;
+    ;
+}
+
+@media (max-width: 420px) {
+    .logo {
+        width: 5rem;
+        padding-right: 15px;
+    }
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+@media (min-width: 420px) {
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2.5px;
+    }
+}
+
+@media (max-width: 280px) {
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 2.5px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    padding: 0.3rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+/* Animação em links da nav */
+a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 0px;
+    height: 1.5px;
+    background-color: #ff5e3a;
+    transition: all 0.3s ease;
+}
+
+a:hover:before {
+    width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: #000000;
+}
+
+.slogan {
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 42px;
+    font-family: 'Arial Narrow', sans-serif;
+    border-radius: 25px;
+    border: 4px solid;
+    width: 70%;
+    height: 5%;
+    float: left;
+    padding-left: 5%;
+}
+
+
+p {
+    margin: 25px 50px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Arial Narrow', sans-serif;
+}
+
+.descricaoR {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    border: 4px solid;
+    width: 60%;
+    height: 8%;
+    float: right;
+    padding-right: 5%;
+}
+
+.descricaoL {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    border: 4px solid;
+    width: 60%;
+    height: 8%;
+    float: left;
+    padding-left: 5%;
+}
+
+.descricaoR2 {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    border: 4px solid;
+    width: 55%;
+    height: 8%;
+    float: right;
+    padding-right: 5%;
+}
+
+.descricaoL2 {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    border: 4px solid;
+    width: 60%;
+    height: 8%;
+    float: right;
+    padding-right: 5%;
+}
+
+.membros {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Arial Narrow', sans-serif;
+    border-radius: 25px;
+    border: 4px solid;
+    padding: 50px;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    float: left;
+    text-align: center;
+}
+
+.fim {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 26px;
+    font-family: 'Arial Narrow', sans-serif;
+    border-radius: 25px;
+    border: 4px solid;
+    padding: 40px;
+    height: 8%;
+    margin: auto;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+
+/* Style the header */
+.header {
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0);
+    padding: px;
+    text-align: center;
+    font-size: 30px;
+    border: 4px;
+    border-radius: 25px;
+    margin: auto;
+    width: 90%;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'left left middle middle right right'
+        'footer footer footer footer footer footer';
+    grid-column-gap: 30px;
+}
+
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 190px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border: 2px solid;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+}
+
+.card-info {
+    background: #181818;
+    color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+}
+
+.card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.card:hover::after {
+    opacity: 0;
+}
+
+.card:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+}
+
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    max-width: 250px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+}
+
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            'header header header header header header'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'footer footer footer footer footer footer';
+    }
+}
